@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="#" class="form">
+        <div class="row">
+          <div class="day-input-box">
+            <label class="label" for="day">Day</label>
+            <input id="day" type="text" name="day" required class="input" />
+            <pre class="error-msg"></pre>
+          </div>
+          <div class="month-input-box">
+            <label class="label" for="month">Month</label>
+            <input id="month" type="text" name="month" required class="input" />
+            <pre class="error-msg"></pre>
+          </div>
+          <div class="year-input-box">
+            <label class="label" for="year">Years</label>
+            <input id="year" type="text" name="year" required class="input" />
+            <pre class="error-msg"></pre>
+          </div>
+        </div>
+
+        <div class="btn-box">
+          <i class="ph ph-flow-arrow icon"></i>
+        </div>
+      </form>
+
+      <article>
+        <div class="year result">
+          <span class="result-number">--</span>
+          <span class="unit">years</span>
+        </div>
+        <div class="month result">
+          <span class="result-number">--</span>
+          <span class="unit">months</span>
+        </div>
+        <div class="day result">
+          <span class="result-number">--</span>
+          <span class="unit">days</span>
+        </div>
+      </article>
+    </main>
+
+    <!-- Day DD Month MM Year YYYY -- years -- months -- days -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/muhammad-ahmad66">Muhammad Ahmad</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
